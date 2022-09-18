@@ -1,4 +1,4 @@
-import boto3
+# Instance scanning and fix
 
 __skip_tags = {
     'AllowSSH': 'true'
