@@ -6,9 +6,9 @@ from instances_scan import scan_and_fix
 
 def test_scan_and_fix_instance():
     with mock_ec2():
-        ec2 = boto3.client('ec2')
+        ec2 = boto3.client('ec2', region_name='us-east-1')
 
-        __create_mock_resource(ec2, boto3.resource('ec2'))
+        __create_mock_resource(ec2, boto3.resource('ec2', region_name='us-east-1'))
 
         scan_and_fix(ec2)
         for reservation in ec2.describe_instances().get('Reservations', []):
