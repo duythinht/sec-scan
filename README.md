@@ -126,3 +126,7 @@ Example output
 >> instance i-9a38dcc914ce97841 has violated by loose open security group: sg-3b15107256637a2d5
 >> modify instance security groups for i-9a38dcc914ce97841: []
 ```
+
+### CICD
+
+* checkout the github action: https://github.com/duythinht/sec-scan/actions
